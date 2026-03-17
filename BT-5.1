@@ -1,0 +1,17 @@
+  import time
+tong_giay = time.time()
+
+GIAY_TRONG_PHUT = 60
+GIAY_TRONG_GIO = 60 * 60
+GIAY_TRONG_NGAY = 24 * 60 * 60
+
+so_ngay = int(tong_giay // GIAY_TRONG_NGAY)
+
+giay_con_lai = tong_giay % GIAY_TRONG_NGAY
+
+gio = int(giay_con_lai // GIAY_TRONG_GIO)
+phut = int((giay_con_lai % GIAY_TRONG_GIO) // GIAY_TRONG_PHUT)
+giay = int(giay_con_lai % GIAY_TRONG_PHUT)
+
+print(f"Số ngày kể từ Epoch: {so_ngay}")
+print(f"Giờ hiện tại (GMT): {gio}:{phut}:{giay}")
