@@ -1,12 +1,14 @@
-class DogCat:
-    name=str
-    age=int
-    def __init__(self,name="",age=0):
-        self.name=name
-        self.age=age
+class SieuNhan:
+    ten=str
+    vukhi=str
+    mausac=str
+    def __init__(self,ten="",vukhi="",mausac=""):
+        self.ten=ten
+        self.vukhi=vukhi
+        self.mausac=mausac
     def __str__(self):
-        return "Ten: %s, Tuoi: %d"%(self.name,self.age)
-dogcat1=DogCat("nguyenducanh",19)
-dogcat2=DogCat("tranduykhanh",19)
-print(dogcat1)      
-print(dogcat2)
+        return "Ten: %s, Vu khi: %s, Mau sac: %s"%(self.ten,self.vukhi,self.mausac)
+    sieuNhanA=SieuNhan("Sieu nhan do","Kiem","Do")
+    sieuNhanB=SieuNhan("Sieu nhan xanh","Sung","Xanh")
+    print(sieuNhanA)
+    print(sieuNhanB)
